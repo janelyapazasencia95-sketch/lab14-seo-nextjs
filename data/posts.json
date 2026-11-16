@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "slug": "seo-nextjs",
+      "title": "SEO en Next.js",
+      "description": "Aprende a optimizar los metadatos y el posicionamiento web.",
+      "content": "Next.js permite gestionar títulos, descripciones y etiquetas Open Graph para mejorar la presentación de una página en los buscadores."
+    },
+    {
+      "slug": "imagenes-optimizadas",
+      "title": "Optimización de imágenes",
+      "description": "Mejora el rendimiento utilizando next/image.",
+      "content": "El componente Image de Next.js permite optimizar las imágenes y servir formatos modernos cuando el navegador y la configuración lo permiten."
+    },
+    {
+      "slug": "rendimiento-web",
+      "title": "Mejora del rendimiento web",
+      "description": "Descubre lazy loading y optimización de fuentes.",
+      "content": "La carga diferida de componentes y la optimización de fuentes ayudan a reducir los recursos necesarios durante la carga inicial."
+    }
+  ]
+}

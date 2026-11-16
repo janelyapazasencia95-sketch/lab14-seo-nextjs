@@ -1,0 +1,99 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f7f9fc;
+  color: #17233c;
+  font-family: Arial, sans-serif;
+}
+a { text-decoration: none; color: inherit; }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 7%;
+  background: white;
+  border-bottom: 1px solid #e9edf5;
+}
+.logo { font-size: 25px; font-weight: 800; }
+.logo span { color: #6558ed; }
+nav { display: flex; gap: 25px; font-weight: 600; }
+nav a:hover { color: #6558ed; }
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+  padding: 85px 7%;
+  background: linear-gradient(135deg,#eef1ff,#ffffff);
+}
+h1 {
+  font-size: clamp(36px,5vw,62px);
+  letter-spacing: -2px;
+  line-height: 1.12;
+  margin: 20px 0;
+}
+h1 span { color: #6558ed; }
+h2 { font-size: 26px; }
+p { color: #667085; line-height: 1.8; }
+.hero p { font-size: 18px; max-width: 540px; }
+.heroImage {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px #273c7520;
+}
+.tag {
+  display: inline-block;
+  background: #e9e6ff;
+  color: #594bd4;
+  padding: 9px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 16px 25px;
+  background: #6558ed;
+  color: white;
+  border-radius: 12px;
+  font-weight: 700;
+}
+.button:hover { background: #5144d2; }
+.container { max-width: 1200px; margin: auto; padding: 65px 28px; }
+.page { min-height: 70vh; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border: 1px solid #edf0f5;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px #1b2e5210;
+}
+.card h2,.card h3 { margin-bottom: 10px; }
+.emoji { font-size: 32px; }
+.readlink { color: #6558ed; font-weight: 700; }
+.feature { margin-top: 30px; }
+.contact { margin-top: 30px; max-width: 650px; }
+.article { max-width: 850px; }
+.article p { font-size: 19px; }
+footer {
+  padding: 26px;
+  text-align: center;
+  background: white;
+  border-top: 1px solid #edf0f5;
+}
+@media(max-width: 768px) {
+  .hero { grid-template-columns: 1fr; padding: 55px 7%; }
+  .cards { grid-template-columns: 1fr; }
+  .header { flex-direction: column; }
+  nav { gap: 16px; }
+}
