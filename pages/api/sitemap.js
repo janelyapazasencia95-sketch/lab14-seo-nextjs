@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   const baseUrl = (
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "http://localhost:3000"
+    "https://lab14-seo-nextjs-ten.vercel.app"
   ).replace(/\/$/, "");
 
   const urls = [
